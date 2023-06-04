@@ -11,7 +11,8 @@ app.use("/items", itemRoutes)
 
 // 404 Error handler
 app.use((req, res, next)=>{
-    return new ExpressError("Not Found", 404)
+    const e = new ExpressError("Not Found", 404)
+    next(e)
 })
 
 // General Error handler
