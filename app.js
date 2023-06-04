@@ -1,5 +1,5 @@
 const express = require("express");
-const itemRoutes = require("./itemRoutes")
+const itemRoutes = require("./routes/itemRoutes")
 const ExpressError = require("./expressError")
 
 const app = express();

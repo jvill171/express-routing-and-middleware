@@ -1,9 +1,9 @@
 const express = require('express')
 const router = new express.Router()
 
-const ExpressError = require("./expressError")
+const ExpressError = require("../expressError")
 
-const fakeDb = require("./fakeDb")
+const fakeDb = require("../fakeDb")
 
 router.get("/", (req, res)=>{
     res.json({fakeDb})
